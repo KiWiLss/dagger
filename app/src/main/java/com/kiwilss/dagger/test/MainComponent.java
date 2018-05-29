@@ -2,6 +2,8 @@ package com.kiwilss.dagger.test;
 
 import com.kiwilss.dagger.MainActivity;
 
+import javax.inject.Singleton;
+
 import dagger.Component;
 
 /**
@@ -13,6 +15,7 @@ import dagger.Component;
  * desc   : ${DESCRIPTION}
  * Description: ${DESCRIPTION}
  */
+@Singleton
 @Component(modules = MainModule.class)
 public interface MainComponent {
 

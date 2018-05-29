@@ -1,9 +1,7 @@
 package com.kiwilss.dagger.test;
 
-import com.kiwilss.dagger.interface_all.RedCloth;
-import com.kiwilss.dagger.test2.Clothes;
-
-import javax.inject.Named;
+import com.kiwilss.dagger.interface_all.PerActivity;
+import com.kiwilss.dagger.utils.ClothHandler;
 
 import dagger.Module;
 import dagger.Provides;
@@ -20,36 +18,53 @@ import dagger.Provides;
 @Module
 public class MainModule {
 
-//    @Provides
-//    public Cloth getCloth(){
-//        Cloth cloth = new Cloth();
-//        cloth.setColor("红色");
-//        return cloth;
-//    }
-
+    @PerActivity
     @Provides
-    //@Named("red")
-    @RedCloth
     public Cloth getRedCloth(){
         Cloth cloth = new Cloth();
         cloth.setColor("红色");
         return cloth;
     }
 
-
+    @PerActivity
     @Provides
-    @Named("blue")
-    public Cloth getBlueCloth(){
-        Cloth cloth = new Cloth();
-        cloth.setColor("蓝色");
-        return cloth;
+    public ClothHandler getClothHandler(){
+        return new ClothHandler();
     }
 
 
-    @Provides
-    public Clothes getClothes(@RedCloth Cloth cloth){
-        return new Clothes(cloth);
-    }
+//    @Provides
+//    public Cloth getCloth(){
+//        Cloth cloth = new Cloth();
+//        cloth.setColor("红色");
+//        return cloth;
+//    }
+//
+//    @Singleton
+//    @Provides
+//    //@Named("red")
+//    //@RedCloth
+//    public Cloth getRedCloth(){
+//        Cloth cloth = new Cloth();
+//        cloth.setColor("红色");
+//        return cloth;
+//    }
+////    @Provides
+////    @Named("blue")
+////    public Cloth getBlueCloth(){
+////        Cloth cloth = new Cloth();
+////        cloth.setColor("蓝色");
+////        return cloth;
+////    }
+//
+//    @Provides
+//    public Clothes getClothes(Cloth cloth){
+//        return new Clothes(cloth);
+//    }
+//    @Provides
+//    public Clothes getClothes(@RedCloth Cloth cloth){
+//        return new Clothes(cloth);
+//    }
 //    @Provides
 //    public Clothes getClothes(){
 //        Cloth cloth = new Cloth();

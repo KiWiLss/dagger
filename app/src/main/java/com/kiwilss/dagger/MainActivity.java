@@ -5,16 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import com.kiwilss.dagger.interface_all.RedCloth;
-import com.kiwilss.dagger.test.Cloth;
 import com.kiwilss.dagger.test.DaggerMainComponent;
 import com.kiwilss.dagger.test.MainComponent;
 import com.kiwilss.dagger.test.MainModule;
-import com.kiwilss.dagger.test2.Clothes;
-import com.kiwilss.dagger.test2.Shoe;
-
-import javax.inject.Inject;
-import javax.inject.Named;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,20 +16,25 @@ public class MainActivity extends AppCompatActivity {
 //    @Inject
 //    Cloth mCloth;
     //获取红色布料
-    @Inject
-    //@Named("red")
-        @RedCloth
-    Cloth mRedCloth;
-    //获取蓝色布料
-    @Inject
-    @Named("blue")
-    Cloth mBlueCloth;
+//    @Inject
+//    //@Named("red")
+//        @RedCloth
+//    Cloth mRedCloth;
+//    //获取蓝色布料
+//    @Inject
+//    @Named("blue")
+//    Cloth mBlueCloth;
 
-    @Inject
-    Shoe mShoe;
+//    @Inject
+//    Shoe mShoe;
+//
+//    @Inject
+//    Clothes mClothes;
 
-    @Inject
-    Clothes mClothes;
+//    @Inject
+//    Cloth mRedCloth;
+//    @Inject
+//    ClothHandler mClothHandler;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -51,9 +49,10 @@ public class MainActivity extends AppCompatActivity {
         //mTvOne.setText("我现在有"+mCloth);
 //        mTvOne.setText("我现在有"+mRedCloth+"和"+mShoe);
 //        mTvOne.setText("我现在有"+mBlueCloth+"和"+mShoe+"和"+mClothes);
-        mTvOne.setText("我现在有"+mRedCloth+","+mBlueCloth+","+mShoe+","+mClothes);
+//        mTvOne.setText("我现在有"+mCloth+","+","+mShoe+","+mClothes+"||"
+//        +(mCloth==mClothes.getCloth()));
 
-
+        //mTvOne.setText("红布料加工后变成了"+mClothHandler.handle(mRedCloth)+ "\nclothHandler地址:" + mClothHandler);
 
 
 
