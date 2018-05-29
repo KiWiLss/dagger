@@ -9,6 +9,7 @@ import com.kiwilss.dagger.test.Cloth;
 import com.kiwilss.dagger.test.DaggerMainComponent;
 import com.kiwilss.dagger.test.MainComponent;
 import com.kiwilss.dagger.test.MainModule;
+import com.kiwilss.dagger.test2.Shoe;
 
 import javax.inject.Inject;
 
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     @Inject
     Cloth mCloth;
 
+    @Inject
+    Shoe mShoe;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -32,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         build.inject(this);
         mTvOne.setText("我现在有"+mCloth);
 
+        mTvOne.setText("我现在有"+mCloth+"和"+mShoe);
     }
 
     private void initView() {
