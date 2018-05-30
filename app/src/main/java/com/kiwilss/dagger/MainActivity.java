@@ -67,4 +67,11 @@ public class MainActivity extends AppCompatActivity {
     public void broadcastOne(View view) {
         startActivity(new Intent(this, BroadcastOneActivity.class));
     }
+
+    /**静态注册,无序
+     * @param view
+     */
+    public void broadcastTwo(View view) {
+
+    }
 }

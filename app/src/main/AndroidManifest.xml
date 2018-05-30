@@ -20,6 +20,7 @@
         </activity>
 
         <activity android:name=".activity.BroadcastOneActivity"/>
+        <activity android:name=".activity.ReceiverTwoActivity"/>
     </application>
 
 </manifest>

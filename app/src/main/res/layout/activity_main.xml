@@ -21,8 +21,12 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="广播一"
+        android:text="广播动态注册"
         android:onClick="broadcastOne"/>
 
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="广播静态注册,无序"
+        android:onClick="broadcastTwo"/>
 </LinearLayout>
