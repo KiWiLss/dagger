@@ -1,10 +1,13 @@
 package com.kiwilss.dagger;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
 
+import com.kiwilss.dagger.activity.BroadcastOneActivity;
 import com.kiwilss.dagger.test.DaggerMainComponent;
 import com.kiwilss.dagger.test.MainComponent;
 import com.kiwilss.dagger.test.MainModule;
@@ -54,13 +57,14 @@ public class MainActivity extends AppCompatActivity {
 
         //mTvOne.setText("红布料加工后变成了"+mClothHandler.handle(mRedCloth)+ "\nclothHandler地址:" + mClothHandler);
 
-
-
     }
-
     private void initView() {
         mTvOne = (TextView) findViewById(R.id.tv_main_one);
     }
-
-
+    /**动态注册广播
+     * @param view
+     */
+    public void broadcastOne(View view) {
+        startActivity(new Intent(this, BroadcastOneActivity.class));
+    }
 }
