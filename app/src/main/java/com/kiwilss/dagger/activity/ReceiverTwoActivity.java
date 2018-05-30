@@ -1,8 +1,10 @@
 package com.kiwilss.dagger.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 
 import com.kiwilss.dagger.R;
@@ -27,6 +29,10 @@ public class ReceiverTwoActivity extends AppCompatActivity {
     }
 
     public void sendListener2(View view) {
-
+        Log.e("MMM", "sendListener2: ");
+        Intent intent = new Intent();
+        intent.setAction("com.broadcast");
+        intent.putExtra("key","broad1");
+        sendBroadcast(intent);
     }
 }

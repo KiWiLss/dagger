@@ -21,6 +21,20 @@
 
         <activity android:name=".activity.BroadcastOneActivity"/>
         <activity android:name=".activity.ReceiverTwoActivity"/>
+
+        <receiver android:name=".broadcast.BroadTestOne"
+            >
+            <intent-filter>
+                <action android:name="com.broadcast"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcast.BroadTestTwo">
+            <intent-filter>
+                <action android:name="com.broadcast"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

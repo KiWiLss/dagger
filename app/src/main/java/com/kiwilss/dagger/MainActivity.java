@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.kiwilss.dagger.activity.BroadcastOneActivity;
+import com.kiwilss.dagger.activity.ReceiverTwoActivity;
 import com.kiwilss.dagger.test.DaggerMainComponent;
 import com.kiwilss.dagger.test.MainComponent;
 import com.kiwilss.dagger.test.MainModule;
@@ -72,6 +73,6 @@ public class MainActivity extends AppCompatActivity {
      * @param view
      */
     public void broadcastTwo(View view) {
-
+        startActivity(new Intent(this, ReceiverTwoActivity.class));
     }
 }
