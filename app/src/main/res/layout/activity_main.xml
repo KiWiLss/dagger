@@ -29,4 +29,10 @@
         android:layout_height="wrap_content"
         android:text="广播静态注册,无序"
         android:onClick="broadcastTwo"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="本地广播"
+        android:onClick="localReceiver"/>
 </LinearLayout>

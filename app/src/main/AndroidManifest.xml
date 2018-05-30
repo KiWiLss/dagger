@@ -21,6 +21,7 @@
 
         <activity android:name=".activity.BroadcastOneActivity"/>
         <activity android:name=".activity.ReceiverTwoActivity"/>
+        <activity android:name=".activity.LocalReceiverActivity"/>
 
         <receiver android:name=".broadcast.BroadTestOne"
             >
