@@ -22,6 +22,9 @@
         <activity android:name=".activity.BroadcastOneActivity"/>
         <activity android:name=".activity.ReceiverTwoActivity"/>
         <activity android:name=".activity.LocalReceiverActivity"/>
+        <activity android:name=".activity.OneServiceActivity"/>
+
+
 
         <receiver android:name=".broadcast.BroadTestOne"
             >
@@ -36,6 +39,9 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </receiver>
+
+
+        <service android:name=".service.MyService"/>
     </application>
 
 </manifest>

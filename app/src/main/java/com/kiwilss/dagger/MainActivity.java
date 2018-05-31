@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.kiwilss.dagger.activity.BroadcastOneActivity;
 import com.kiwilss.dagger.activity.LocalReceiverActivity;
+import com.kiwilss.dagger.activity.OneServiceActivity;
 import com.kiwilss.dagger.activity.ReceiverTwoActivity;
 import com.kiwilss.dagger.test.DaggerMainComponent;
 import com.kiwilss.dagger.test.MainComponent;
@@ -82,5 +83,9 @@ public class MainActivity extends AppCompatActivity {
      */
     public void localReceiver(View view) {
         startActivity(new Intent(this, LocalReceiverActivity.class));
+    }
+
+    public void serviceListener(View view) {
+        startActivity(new Intent(this, OneServiceActivity.class));
     }
 }

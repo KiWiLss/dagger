@@ -35,4 +35,11 @@
         android:layout_height="wrap_content"
         android:text="本地广播"
         android:onClick="localReceiver"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="服务"
+        android:onClick="serviceListener"/>
+
 </LinearLayout>
