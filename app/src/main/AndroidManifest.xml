@@ -25,6 +25,7 @@
         <activity android:name=".activity.OneServiceActivity"/>
         <activity android:name=".activity.BindServiceActivity"/>
 
+        <activity android:name=".activity.IntentActivity"/>
 
         <receiver android:name=".broadcast.BroadTestOne"
             >
@@ -44,6 +45,7 @@
 
         <service android:name=".service.MyService"/>
         <service android:name=".service.MyServiceTwo"/>
+        <service android:name=".service.MyIntentService"/>
     </application>
 
 </manifest>

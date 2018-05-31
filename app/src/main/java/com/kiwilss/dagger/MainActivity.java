@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.kiwilss.dagger.activity.BindServiceActivity;
 import com.kiwilss.dagger.activity.BroadcastOneActivity;
+import com.kiwilss.dagger.activity.IntentActivity;
 import com.kiwilss.dagger.activity.LocalReceiverActivity;
 import com.kiwilss.dagger.activity.OneServiceActivity;
 import com.kiwilss.dagger.activity.ReceiverTwoActivity;
@@ -93,5 +94,9 @@ public class MainActivity extends AppCompatActivity {
     //绑定开启服务
     public void serviceBindListener(View view) {
         startActivity(new Intent(this, BindServiceActivity.class));
+    }
+
+    public void intentserviceBindListener(View view) {
+        startActivity(new Intent(this, IntentActivity.class));
     }
 }
