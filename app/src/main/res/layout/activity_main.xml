@@ -39,7 +39,12 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="服务"
+        android:text="一般服务"
         android:onClick="serviceListener"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="绑定服务"
+        android:onClick="serviceBindListener"/>
 </LinearLayout>

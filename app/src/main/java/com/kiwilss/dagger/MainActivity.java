@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.kiwilss.dagger.activity.BindServiceActivity;
 import com.kiwilss.dagger.activity.BroadcastOneActivity;
 import com.kiwilss.dagger.activity.LocalReceiverActivity;
 import com.kiwilss.dagger.activity.OneServiceActivity;
@@ -87,5 +88,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void serviceListener(View view) {
         startActivity(new Intent(this, OneServiceActivity.class));
+    }
+
+    //绑定开启服务
+    public void serviceBindListener(View view) {
+        startActivity(new Intent(this, BindServiceActivity.class));
     }
 }

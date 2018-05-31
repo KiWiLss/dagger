@@ -23,7 +23,7 @@
         <activity android:name=".activity.ReceiverTwoActivity"/>
         <activity android:name=".activity.LocalReceiverActivity"/>
         <activity android:name=".activity.OneServiceActivity"/>
-
+        <activity android:name=".activity.BindServiceActivity"/>
 
 
         <receiver android:name=".broadcast.BroadTestOne"
@@ -33,6 +33,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </receiver>
+
         <receiver android:name=".broadcast.BroadTestTwo">
             <intent-filter>
                 <action android:name="com.broadcast"/>
@@ -42,6 +43,7 @@
 
 
         <service android:name=".service.MyService"/>
+        <service android:name=".service.MyServiceTwo"/>
     </application>
 
 </manifest>
