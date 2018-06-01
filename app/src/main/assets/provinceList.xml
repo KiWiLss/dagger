@@ -1,0 +1,157 @@
+﻿<provinceList>
+<province>
+	<id>10</id>
+	<countryId>1</countryId>
+	<provinceName>北京市</provinceName>
+</province>
+<province>
+	<id>11</id>
+	<countryId>1</countryId>
+	<provinceName>天津市</provinceName>
+</province>
+<province>
+	<id>12</id>
+	<countryId>1</countryId>
+	<provinceName>河北省</provinceName>
+</province>
+<province>
+	<id>13</id>
+	<countryId>1</countryId>
+	<provinceName>内蒙古</provinceName>
+</province>
+<province>
+	<id>14</id>
+	<countryId>1</countryId>
+	<provinceName>山西省</provinceName>
+</province>
+<province>
+	<id>20</id>
+	<countryId>1</countryId>
+	<provinceName>辽宁省</provinceName>
+</province>
+<province>
+	<id>21</id>
+	<countryId>1</countryId>
+	<provinceName>吉林省</provinceName>
+</province>
+<province>
+	<id>22</id>
+	<countryId>1</countryId>
+	<provinceName>黑龙江省</provinceName>
+</province>
+<province>
+	<id>30</id>
+	<countryId>1</countryId>
+	<provinceName>上海市</provinceName>
+</province>
+<province>
+	<id>31</id>
+	<countryId>1</countryId>
+	<provinceName>江苏省</provinceName>
+</province>
+<province>
+	<id>32</id>
+	<countryId>1</countryId>
+	<provinceName>山东省</provinceName>
+</province>
+<province>
+	<id>33</id>
+	<countryId>1</countryId>
+	<provinceName>安徽省</provinceName>
+</province>
+<province>
+	<id>34</id>
+	<countryId>1</countryId>
+	<provinceName>福建省</provinceName>
+</province>
+<province>
+	<id>35</id>
+	<countryId>1</countryId>
+	<provinceName>浙江省</provinceName>
+</province>
+<province>
+	<id>36</id>
+	<countryId>1</countryId>
+	<provinceName>江西省</provinceName>
+</province>
+<province>
+	<id>40</id>
+	<countryId>1</countryId>
+	<provinceName>广东省</provinceName>
+</province>
+<province>
+	<id>41</id>
+	<countryId>1</countryId>
+	<provinceName>广西省</provinceName>
+</province>
+<province>
+	<id>42</id>
+	<countryId>1</countryId>
+	<provinceName>海南省</provinceName>
+</province>
+<province>
+	<id>60</id>
+	<countryId>1</countryId>
+	<provinceName>重庆市</provinceName>
+</province>
+<province>
+	<id>61</id>
+	<countryId>1</countryId>
+	<provinceName>四川省</provinceName>
+</province>
+<province>
+	<id>62</id>
+	<countryId>1</countryId>
+	<provinceName>云南省</provinceName>
+</province>
+<province>
+	<id>63</id>
+	<countryId>1</countryId>
+	<provinceName>贵州省</provinceName>
+</province>
+<province>
+	<id>64</id>
+	<countryId>1</countryId>
+	<provinceName>西藏</provinceName>
+</province>
+<province>
+	<id>70</id>
+	<countryId>1</countryId>
+	<provinceName>河南省</provinceName>
+</province>
+<province>
+	<id>71</id>
+	<countryId>1</countryId>
+	<provinceName>湖北省</provinceName>
+</province>
+<province>
+	<id>72</id>
+	<countryId>1</countryId>
+	<provinceName>湖南省</provinceName>
+</province>
+<province>
+	<id>80</id>
+	<countryId>1</countryId>
+	<provinceName>陕西省</provinceName>
+</province>
+<province>
+	<id>81</id>
+	<countryId>1</countryId>
+	<provinceName>青海省</provinceName>
+</province>
+<province>
+	<id>82</id>
+	<countryId>1</countryId>
+	<provinceName>宁夏</provinceName>
+</province>
+<province>
+	<id>83</id>
+	<countryId>1</countryId>
+	<provinceName>新疆</provinceName>
+</province>
+<province>
+	<id>84</id>
+	<countryId>1</countryId>
+	<provinceName>甘肃省</provinceName>
+</province>
+</provinceList>

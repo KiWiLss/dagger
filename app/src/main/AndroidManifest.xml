@@ -26,6 +26,7 @@
         <activity android:name=".activity.BindServiceActivity"/>
 
         <activity android:name=".activity.IntentActivity"/>
+        <activity android:name=".activity.XmlActivity"/>
 
         <receiver android:name=".broadcast.BroadTestOne"
             >

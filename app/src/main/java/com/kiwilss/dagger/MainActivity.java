@@ -13,6 +13,7 @@ import com.kiwilss.dagger.activity.IntentActivity;
 import com.kiwilss.dagger.activity.LocalReceiverActivity;
 import com.kiwilss.dagger.activity.OneServiceActivity;
 import com.kiwilss.dagger.activity.ReceiverTwoActivity;
+import com.kiwilss.dagger.activity.XmlActivity;
 import com.kiwilss.dagger.test.DaggerMainComponent;
 import com.kiwilss.dagger.test.MainComponent;
 import com.kiwilss.dagger.test.MainModule;
@@ -98,5 +99,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void intentserviceBindListener(View view) {
         startActivity(new Intent(this, IntentActivity.class));
+    }
+
+    public void xmlListener(View view) {
+        startActivity(new Intent(this, XmlActivity.class));
     }
 }

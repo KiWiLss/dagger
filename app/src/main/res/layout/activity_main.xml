@@ -53,4 +53,10 @@
         android:layout_height="wrap_content"
         android:text="前台服务"
         android:onClick="intentserviceBindListener"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xml"
+        android:onClick="xmlListener"/>
 </LinearLayout>
