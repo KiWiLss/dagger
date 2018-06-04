@@ -65,4 +65,10 @@
         android:layout_height="wrap_content"
         android:text="定时"
         android:onClick="alarmListener"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="contentprovider"
+        android:onClick="contentListener"/>
 </LinearLayout>

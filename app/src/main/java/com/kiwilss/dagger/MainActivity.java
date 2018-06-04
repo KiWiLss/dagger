@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.kiwilss.dagger.activity.AlarmActivity;
 import com.kiwilss.dagger.activity.BindServiceActivity;
 import com.kiwilss.dagger.activity.BroadcastOneActivity;
+import com.kiwilss.dagger.activity.ContentActivity;
 import com.kiwilss.dagger.activity.IntentActivity;
 import com.kiwilss.dagger.activity.LocalReceiverActivity;
 import com.kiwilss.dagger.activity.OneServiceActivity;
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         initView();
         //
@@ -108,5 +110,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void alarmListener(View view) {
         startActivity(new Intent(this, AlarmActivity.class));
+    }
+
+    public void contentListener(View view) {
+        startActivity(new Intent(this, ContentActivity.class));
     }
 }
