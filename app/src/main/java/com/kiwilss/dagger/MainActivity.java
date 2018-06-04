@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.kiwilss.dagger.activity.AlarmActivity;
 import com.kiwilss.dagger.activity.BindServiceActivity;
 import com.kiwilss.dagger.activity.BroadcastOneActivity;
 import com.kiwilss.dagger.activity.IntentActivity;
@@ -103,5 +104,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void xmlListener(View view) {
         startActivity(new Intent(this, XmlActivity.class));
+    }
+
+    public void alarmListener(View view) {
+        startActivity(new Intent(this, AlarmActivity.class));
     }
 }

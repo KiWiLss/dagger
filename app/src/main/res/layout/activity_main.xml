@@ -59,4 +59,10 @@
         android:layout_height="wrap_content"
         android:text="xml"
         android:onClick="xmlListener"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="定时"
+        android:onClick="alarmListener"/>
 </LinearLayout>
