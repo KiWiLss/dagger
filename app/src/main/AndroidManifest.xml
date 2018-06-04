@@ -2,9 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kiwilss.dagger">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -20,37 +19,43 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.BroadcastOneActivity" />
+        <activity android:name=".activity.ReceiverTwoActivity" />
+        <activity android:name=".activity.LocalReceiverActivity" />
+        <activity android:name=".activity.OneServiceActivity" />
+        <activity android:name=".activity.BindServiceActivity" />
+        <activity android:name=".activity.IntentActivity" />
+        <activity android:name=".activity.XmlActivity" />
+        <activity android:name=".activity.AlarmActivity" />
+        <activity android:name=".activity.ContentActivity" />
 
-        <activity android:name=".activity.BroadcastOneActivity"/>
-        <activity android:name=".activity.ReceiverTwoActivity"/>
-        <activity android:name=".activity.LocalReceiverActivity"/>
-        <activity android:name=".activity.OneServiceActivity"/>
-        <activity android:name=".activity.BindServiceActivity"/>
-
-        <activity android:name=".activity.IntentActivity"/>
-        <activity android:name=".activity.XmlActivity"/>
-        <activity android:name=".activity.AlarmActivity"/>
-        <activity android:name=".activity.ContentActivity"/>
-
-        <receiver android:name=".broadcast.BroadTestOne"
-            >
+        <receiver android:name=".broadcast.BroadTestOne">
             <intent-filter>
-                <action android:name="com.broadcast"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.broadcast" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
-
         <receiver android:name=".broadcast.BroadTestTwo">
             <intent-filter>
-                <action android:name="com.broadcast"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.broadcast" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
 
+        <service android:name=".service.MyService" />
+        <service android:name=".service.MyServiceTwo" />
+        <service android:name=".service.MyIntentService" />
 
-        <service android:name=".service.MyService"/>
-        <service android:name=".service.MyServiceTwo"/>
-        <service android:name=".service.MyIntentService"/>
+        <!--<provider-->
+            <!--android:name=".content.MyProvider"-->
+            <!--android:authorities="" />-->
+        <provider
+            android:name=".DatabaseProvider"
+            android:authorities="com.kiwilss.dagger.provider"
+            android:enabled="true"
+            android:exported="true"/>
     </application>
 
 </manifest>
