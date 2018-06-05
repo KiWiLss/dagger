@@ -20,6 +20,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     testImplementation 'junit:junit:4.12'
@@ -29,8 +30,14 @@ dependencies {
 //    compile 'com.google.dagger:dagger:2.6'
 //    apt 'com.google.dagger:dagger-compiler:2.6'
 
-    compile"com.google.dagger:dagger:2.14.1"
+    implementation"com.google.dagger:dagger:2.14.1"
     annotationProcessor"com.google.dagger:dagger-compiler:2.14.1"
+
+//    compile 'com.miguelcatalan:materialsearchview:1.4.0'
+//
+//    configurations {
+//        all*.exclude group: 'com.android.support', module: 'support-v13'
+//    }
 }
 //应用apt插件
 //apply plugin: 'com.neenbedankt.android-apt'

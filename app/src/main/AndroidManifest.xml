@@ -29,6 +29,8 @@
         <activity android:name=".activity.AlarmActivity" />
         <activity android:name=".activity.ContentActivity" />
 
+        <activity android:name=".basetext.SearchActivity"/>
+
         <receiver android:name=".broadcast.BroadTestOne">
             <intent-filter>
                 <action android:name="com.broadcast" />
