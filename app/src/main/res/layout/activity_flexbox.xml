@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:orientation="vertical"
+    android:background="#fff"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="方法一"/>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_start"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="recyclerview瀑布流"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:background="@drawable/label_bg_shape"
+            android:layout_marginLeft="5dp"
+            android:onClick="rvOneListener"
+            />
+
+        <TextView
+            style="@style/TvOne"
+            android:text="影视天堂"
+            />
+        <TextView
+            style="@style/TvOne"
+            android:text="美食"
+            />
+
+        <TextView
+            style="@style/TvOne"
+            android:text="漫画,手绘,广告图"
+            />
+
+        <TextView
+            style="@style/TvOne"
+            android:text="漫画,手绘,广告图"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            style="@style/TvOne"
+            android:text="漫画,手绘,广告图"
+            android:layout_marginTop="5dp"
+            />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="方法二"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.flexbox.FlexboxLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:flexDirection="row"
+        app:justifyContent="flex_start"
+        app:flexWrap="wrap"
+        app:alignContent="flex_start"
+        app:alignItems="stretch"
+        app:showDivider="beginning|middle"
+        app:dividerDrawable="@drawable/divider_shape"
+        android:paddingRight="8dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="程序员"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:background="@drawable/label_bg_shape"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:layout_alignSelf="flex_start"
+            android:text="影视天堂"
+            app:layout_flexGrow="1"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:background="@drawable/label_bg_shape"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:layout_alignSelf="flex_start"
+            android:text="影视天堂"
+            app:layout_flexGrow="1"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:background="@drawable/label_bg_shape"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:layout_alignSelf="flex_start"
+            android:text="影视天堂"
+            app:layout_flexGrow="1"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:background="@drawable/label_bg_shape"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:layout_alignSelf="flex_start"
+            android:text="影视天堂"
+            app:layout_flexGrow="1"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:background="@drawable/label_bg_shape"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:layout_flexGrow="1"
+            app:layout_alignSelf="flex_start"
+            android:text="漫画.手绘"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:background="@drawable/label_bg_shape"
+            />
+    </com.google.android.flexbox.FlexboxLayout>
+
+
+</LinearLayout>

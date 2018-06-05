@@ -17,6 +17,7 @@ import com.kiwilss.dagger.activity.OneServiceActivity;
 import com.kiwilss.dagger.activity.ReceiverTwoActivity;
 import com.kiwilss.dagger.activity.XmlActivity;
 import com.kiwilss.dagger.basetext.SearchActivity;
+import com.kiwilss.dagger.basetext.flexbox.FlexboxActivity;
 import com.kiwilss.dagger.test.DaggerMainComponent;
 import com.kiwilss.dagger.test.MainComponent;
 import com.kiwilss.dagger.test.MainModule;
@@ -119,5 +120,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void searchView(View view) {
         startActivity(new Intent(this, SearchActivity.class));
+    }
+
+    public void flexboxListener(View view) {
+        startActivity(new Intent(this, FlexboxActivity.class));
     }
 }

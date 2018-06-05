@@ -83,6 +83,13 @@
             android:layout_height="wrap_content"
             android:text="searchview"
             android:onClick="searchView"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="流式布局"
+            android:onClick="flexboxListener"/>
+
     </LinearLayout>
 
 </ScrollView>

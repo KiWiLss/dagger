@@ -30,6 +30,8 @@
         <activity android:name=".activity.ContentActivity" />
 
         <activity android:name=".basetext.SearchActivity"/>
+        <activity android:name=".basetext.flexbox.FlexboxActivity"/>
+        <activity android:name=".basetext.flexbox.RvOneActivity"/>
 
         <receiver android:name=".broadcast.BroadTestOne">
             <intent-filter>
