@@ -38,6 +38,6 @@ public class FlexboxActivity extends AppCompatActivity {
      * @param view
      */
     public void rvTwo(View view) {
-
+        startActivity(new Intent(this,RvTwoActivity.class));
     }
 }
