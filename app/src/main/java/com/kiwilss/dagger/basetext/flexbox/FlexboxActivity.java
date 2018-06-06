@@ -1,5 +1,6 @@
 package com.kiwilss.dagger.basetext.flexbox;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -30,6 +31,13 @@ public class FlexboxActivity extends AppCompatActivity {
      * @param view
      */
     public void rvOneListener(View view) {
+        startActivity(new Intent(this,RvOneActivity.class));
+    }
+
+    /**结合实现的流式布局
+     * @param view
+     */
+    public void rvTwo(View view) {
 
     }
 }

@@ -36,16 +36,19 @@
 
         <TextView
             style="@style/TvOne"
-            android:text="影视天堂"
+            android:text="结合recyclerview流式布局"
+            android:onClick="rvTwo"
             />
         <TextView
             style="@style/TvOne"
             android:text="美食"
+            android:layout_marginTop="5dp"
             />
 
         <TextView
             style="@style/TvOne"
             android:text="漫画,手绘,广告图"
+            android:layout_marginTop="5dp"
             />
 
         <TextView
