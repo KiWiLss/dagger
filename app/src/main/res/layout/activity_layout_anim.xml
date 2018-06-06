@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout_container"
+        android:visibility="visible"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_centerInParent="true"
+        android:layoutAnimation="@anim/alpha"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:background="#E38A7C"
+            android:textColor="@android:color/white"
+            android:text="Hello"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textSize="28sp"
+            android:textColor="@android:color/white"
+            android:text="World"
+            android:gravity="center"
+            android:background="#74D6AF"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textSize="28sp"
+            android:textColor="@android:color/white"
+            android:text="Hello"
+            android:gravity="center"
+            android:background="#FEBB50"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textSize="28sp"
+            android:textColor="@android:color/white"
+            android:text="Android"
+            android:gravity="center"
+            android:background="#C79EFE"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

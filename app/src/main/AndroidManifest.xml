@@ -33,6 +33,11 @@
         <activity android:name=".basetext.flexbox.FlexboxActivity"/>
         <activity android:name=".basetext.flexbox.RvOneActivity"/>
         <activity android:name=".basetext.flexbox.RvTwoActivity"/>
+        <activity android:name=".basetext.viewpager.WrapVPActivity"/>
+
+        <activity android:name=".activity.LayoutAnimActivity"/>
+
+
 
         <receiver android:name=".broadcast.BroadTestOne">
             <intent-filter>

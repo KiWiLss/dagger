@@ -12,6 +12,7 @@ import com.kiwilss.dagger.activity.BindServiceActivity;
 import com.kiwilss.dagger.activity.BroadcastOneActivity;
 import com.kiwilss.dagger.activity.ContentActivity;
 import com.kiwilss.dagger.activity.IntentActivity;
+import com.kiwilss.dagger.activity.LayoutAnimActivity;
 import com.kiwilss.dagger.activity.LocalReceiverActivity;
 import com.kiwilss.dagger.activity.OneServiceActivity;
 import com.kiwilss.dagger.activity.ReceiverTwoActivity;
@@ -124,5 +125,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void flexboxListener(View view) {
         startActivity(new Intent(this, FlexboxActivity.class));
+    }
+
+    public void layoutanim(View view) {
+        startActivity(new Intent(this, LayoutAnimActivity.class));
     }
 }
