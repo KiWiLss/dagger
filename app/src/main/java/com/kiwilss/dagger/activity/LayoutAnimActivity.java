@@ -21,6 +21,7 @@ public class LayoutAnimActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layout_anim);
 
+        //可以不用加
         //AnimationUtils.loadLayoutAnimation(this,R.anim.text_alpha);
 
     }

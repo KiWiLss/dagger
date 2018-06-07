@@ -36,7 +36,7 @@
         <activity android:name=".basetext.viewpager.WrapVPActivity"/>
 
         <activity android:name=".activity.LayoutAnimActivity"/>
-
+        <activity android:name=".basetext.viewpager.RvVpActivity"/>
 
 
         <receiver android:name=".broadcast.BroadTestOne">

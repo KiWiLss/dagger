@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#fff">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -94,6 +95,38 @@
             android:layout_height="wrap_content"
             android:text="布局动画"
             android:onClick="layoutanim"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="recyclerview实现viewpger"
+            android:onClick="rvvpListener"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="5dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="测试背景"
+                android:textColor="#fff"
+              android:background="#0f0"
+                android:layout_margin="10dp"/>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
     </LinearLayout>
 
 </ScrollView>

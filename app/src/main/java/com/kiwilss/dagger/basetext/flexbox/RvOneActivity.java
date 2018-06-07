@@ -72,7 +72,7 @@ public class RvOneActivity extends AppCompatActivity {
 
     }
 
-    class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
+    public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
 
 
         @NonNull

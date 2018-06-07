@@ -19,6 +19,7 @@ import com.kiwilss.dagger.activity.ReceiverTwoActivity;
 import com.kiwilss.dagger.activity.XmlActivity;
 import com.kiwilss.dagger.basetext.SearchActivity;
 import com.kiwilss.dagger.basetext.flexbox.FlexboxActivity;
+import com.kiwilss.dagger.basetext.viewpager.RvVpActivity;
 import com.kiwilss.dagger.test.DaggerMainComponent;
 import com.kiwilss.dagger.test.MainComponent;
 import com.kiwilss.dagger.test.MainModule;
@@ -129,5 +130,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void layoutanim(View view) {
         startActivity(new Intent(this, LayoutAnimActivity.class));
+    }
+
+    public void rvvpListener(View view) {
+        startActivity(new Intent(this, RvVpActivity.class));
     }
 }
