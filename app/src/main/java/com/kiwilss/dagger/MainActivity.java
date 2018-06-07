@@ -17,6 +17,7 @@ import com.kiwilss.dagger.activity.LocalReceiverActivity;
 import com.kiwilss.dagger.activity.OneServiceActivity;
 import com.kiwilss.dagger.activity.ReceiverTwoActivity;
 import com.kiwilss.dagger.activity.XmlActivity;
+import com.kiwilss.dagger.basetext.ConstrainlayoutActivity;
 import com.kiwilss.dagger.basetext.SearchActivity;
 import com.kiwilss.dagger.basetext.flexbox.FlexboxActivity;
 import com.kiwilss.dagger.basetext.viewpager.RvVpActivity;
@@ -137,6 +138,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void constrianlayout(View view) {
-
+        startActivity(new Intent(this, ConstrainlayoutActivity.class));
     }
 }

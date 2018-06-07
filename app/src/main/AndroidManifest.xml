@@ -38,7 +38,7 @@
 
         <activity android:name=".activity.LayoutAnimActivity"/>
         <activity android:name=".basetext.viewpager.RvVpActivity"/>
-
+        <activity android:name=".basetext.ConstrainlayoutActivity"/>
 
         <receiver android:name=".broadcast.BroadTestOne">
             <intent-filter>
