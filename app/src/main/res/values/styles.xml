@@ -8,7 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-
+    <style name="NoActionbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
 
 
    <style name="TvOne">
@@ -22,4 +27,46 @@
         <item name="android:layout_marginLeft">5dp</item>
     </style>
 
+    <style name="editTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:background">@drawable/search_edit_bg</item>-->
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:drawableStart">@drawable/search_icon</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:hint">搜索</item>
+    </style>
+
+    <style name="textViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+
+    <declare-styleable name="CustomToolBar">
+        <!--左按钮是否可见|背景-->
+        <attr name="left_btn_visible" format="boolean" />
+        <attr name="left_btn_src" format="reference|color" />
+        <!--左文本是否可见|文本内容-->
+        <attr name="left_tv_visible" format="boolean" />
+        <attr name="left_tv_text" format="string" />
+        <!--右边按钮是否可见|背景-->
+        <attr name="right_btn_visible" format="boolean" />
+        <attr name="right_btn_src" format="reference|color" />
+        <!--右文本是否可见|文本内容-->
+        <attr name="right_tv_visible" format="boolean" />
+        <attr name="right_tv_text" format="string" />
+        <!--标题是否可见|文本内容-->
+        <attr name="title_visible" format="boolean" />
+        <attr name="title_text" format="string" />
+        <!--背景-->
+        <attr name="barBackground" format="reference|color" />
+    </declare-styleable>
 </resources>

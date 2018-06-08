@@ -4,11 +4,34 @@
     android:layout_height="match_parent">
 
 
+
+
 <LinearLayout
     android:id="@+id/ll_search_ll"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"/>
+    android:orientation="vertical">
+
+<com.kiwilss.dagger.widget.TitleBar
+    android:id="@+id/titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</com.kiwilss.dagger.widget.TitleBar>
+
+
+<com.kiwilss.dagger.widget.SearchEditText
+    android:id="@+id/activity_main_input_edittext"
+    style="@style/editTextStyle"
+    android:layout_marginTop="20dp"/>
+
+    <com.kiwilss.dagger.widget.SearchEditText
+        android:id="@+id/activity_main_input_edittext2"
+        style="@style/editTextStyle"
+        android:layout_marginTop="20dp" />
+
+
+</LinearLayout>
 
 
 

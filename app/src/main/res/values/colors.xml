@@ -18,4 +18,6 @@
 
     <color name="page3_start_color">#75539F</color>
     <color name="page3_end_color">#A87CB7</color>
+
+    <color name="search_edit_gray">#ffcccccc</color>
 </resources>
