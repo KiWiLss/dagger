@@ -131,8 +131,16 @@
             android:text="constrianlayout"
             android:onClick="constrianlayout"/>
 
-
-
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="webview"
+            android:onClick="webviewListener"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="textviewwb"
+            android:onClick="textviewListener"/>
     </LinearLayout>
 
 </ScrollView>

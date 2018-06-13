@@ -4,6 +4,9 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
 
     <application
         android:name=".MyApplication"
@@ -40,6 +43,8 @@
         <activity android:name=".activity.LayoutAnimActivity"/>
         <activity android:name=".basetext.viewpager.RvVpActivity"/>
         <activity android:name=".basetext.ConstrainlayoutActivity"/>
+        <activity android:name=".basetext.WebviewActivity"/>
+        <activity android:name=".basetext.TextViewActivity"/>
 
         <receiver android:name=".broadcast.BroadTestOne">
             <intent-filter>
