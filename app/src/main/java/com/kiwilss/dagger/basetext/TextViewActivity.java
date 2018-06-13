@@ -1,6 +1,8 @@
 package com.kiwilss.dagger.basetext;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -36,7 +38,12 @@ public class TextViewActivity extends AppCompatActivity {
         this.tvtextviewtv = (TextView) findViewById(R.id.tv_textview_tv);
 
 
-        startRask();
+        //startRask();
+
+        SharedPreferences sp = getSharedPreferences("default", Context.MODE_PRIVATE);
+        String html = sp.getString("html","no");
+        tvtextviewtv.setText(html);
+
     }
 
     @SuppressLint("HandlerLeak")
@@ -60,7 +67,9 @@ public class TextViewActivity extends AppCompatActivity {
             public void run() {
                 URL url = null;
                 try {
-                    url = new URL("http://lol.qq.com/web201310/info-heros.shtml");
+                    //url = new URL("http://lol.qq.com/web201310/info-heros.shtml");
+                    url = new URL("https://creditcardapp.bankcomm.com/member/apply/status/inquiry.html");
+                    //url = new URL("https://creditcardapp.bankcomm.com/member/apply/status/inquiry.html?from=groupmessage");
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
@@ -80,6 +89,7 @@ public class TextViewActivity extends AppCompatActivity {
                         byte[] bytes = sb.toString().getBytes("utf-8");
                         String str = new String(bytes);
                         bundle.putString("stringUrl", str);
+                        Log.e("MMM", "run: "+str);
                         msg.setData(bundle);
                         msg.what = 0x123;
                         mHandler.sendMessage(msg);

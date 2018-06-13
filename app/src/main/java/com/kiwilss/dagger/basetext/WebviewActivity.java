@@ -1,7 +1,10 @@
 package com.kiwilss.dagger.basetext;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -13,6 +16,12 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import com.kiwilss.dagger.R;
+
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 /**
  * FileName: WebviewActivity
@@ -54,6 +63,14 @@ public class WebviewActivity extends AppCompatActivity {
             @Override
             public void onPageFinished(WebView view, String url) {
                 Log.e("MMM", "onPageFinished: "+url);
+
+                if (TextUtils.equals(url,"https://creditcardapp.bankcomm.com/member/apply/status/inquiry.html")) {
+
+                    startRask();
+
+                }
+
+
 //                // 获取页面内容
                 view.loadUrl("javascript:window.java_obj.showSource("
                         + "document.getElementsByTagName('html')[0].innerHTML);");
@@ -75,6 +92,64 @@ public class WebviewActivity extends AppCompatActivity {
 
 
     }
+
+
+    public void startRask(){
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                URL url = null;
+                try {
+                    //url = new URL("http://lol.qq.com/web201310/info-heros.shtml");
+                    url = new URL("https://creditcardapp.bankcomm.com/member/apply/status/inquiry.html");
+                    //url = new URL("https://creditcardapp.bankcomm.com/member/apply/status/inquiry.html?from=groupmessage");
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                    if(httpURLConnection.getResponseCode() == HttpURLConnection.HTTP_OK) {
+
+                        InputStreamReader is = new InputStreamReader(httpURLConnection.getInputStream());
+                        int i = 0;
+                        StringBuffer sb = new StringBuffer();
+                        while ((i = is.read()) != -1 ) {
+                            sb.append((char) i);
+                        }
+//                        Log.d("TAG",sb.toString());
+                        Message msg = new Message();
+                        Bundle bundle = new Bundle();
+                        byte[] bytes = sb.toString().getBytes("utf-8");
+                        String str = new String(bytes);
+                        bundle.putString("stringUrl", str);
+                        Log.e("MMM", "run: "+str);
+                        SharedPreferences sp = getSharedPreferences("default", Context.MODE_PRIVATE);
+
+                        SharedPreferences.Editor edit = sp.edit();
+                        edit.putString("html",str);
+                        edit.apply();
+
+                        msg.setData(bundle);
+                        msg.what = 0x123;
+                        //mHandler.sendMessage(msg);
+
+                    } else {
+                        Log.e("MMM" ,httpURLConnection.getResponseCode() +"");
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+
+
+    }
+
+
+
+
+
     public static final String TAG = "MMM";
     public final class InJavaScriptLocalObj
     {
