@@ -19,9 +19,11 @@ import com.kiwilss.dagger.activity.ReceiverTwoActivity;
 import com.kiwilss.dagger.activity.XmlActivity;
 import com.kiwilss.dagger.basetext.ConstrainlayoutActivity;
 import com.kiwilss.dagger.basetext.SearchActivity;
+import com.kiwilss.dagger.basetext.ShaLayoutActivity;
 import com.kiwilss.dagger.basetext.TextViewActivity;
 import com.kiwilss.dagger.basetext.WebviewActivity;
 import com.kiwilss.dagger.basetext.flexbox.FlexboxActivity;
+import com.kiwilss.dagger.basetext.recycler.RecyclerOneActivity;
 import com.kiwilss.dagger.basetext.viewpager.RvVpActivity;
 import com.kiwilss.dagger.test.DaggerMainComponent;
 import com.kiwilss.dagger.test.MainComponent;
@@ -149,5 +151,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void textviewListener(View view) {
         startActivity(new Intent(this, TextViewActivity.class));
+    }
+
+    public void trvOneListener(View view) {
+        startActivity(new Intent(this, RecyclerOneActivity.class));
+    }
+
+    public void showLayout(View view) {
+        startActivity(new Intent(this, ShaLayoutActivity.class));
     }
 }

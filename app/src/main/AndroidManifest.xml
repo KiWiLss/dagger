@@ -46,6 +46,11 @@
         <activity android:name=".basetext.WebviewActivity"/>
         <activity android:name=".basetext.TextViewActivity"/>
 
+        <activity android:name=".basetext.recycler.RecyclerOneActivity"/>
+        <activity android:name=".basetext.ShaLayoutActivity"/>
+
+
+
         <receiver android:name=".broadcast.BroadTestOne">
             <intent-filter>
                 <action android:name="com.broadcast" />

@@ -141,6 +141,18 @@
             android:layout_height="wrap_content"
             android:text="textviewwb"
             android:onClick="textviewListener"/>
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="rv-one"
+        android:onClick="trvOneListener"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="阴影测试"
+            android:onClick="showLayout"/>
     </LinearLayout>
 
 </ScrollView>

@@ -1,5 +1,6 @@
 package com.kiwilss.dagger.basetext;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
@@ -64,11 +65,11 @@ public class WebviewActivity extends AppCompatActivity {
             public void onPageFinished(WebView view, String url) {
                 Log.e("MMM", "onPageFinished: "+url);
 
-                if (TextUtils.equals(url,"https://creditcardapp.bankcomm.com/member/apply/status/inquiry.html")) {
-
-                    startRask();
-
-                }
+//                if (TextUtils.equals(url,"https://creditcardapp.bankcomm.com/member/apply/status/inquiry.html")) {
+//
+//                    startRask();
+//
+//                }
 
 
 //                // 获取页面内容
@@ -185,6 +186,7 @@ public class WebviewActivity extends AppCompatActivity {
         }
     }
 
+    @SuppressLint({"SetJavaScriptEnabled", "AddJavascriptInterface"})
     private void settings(){
         // 开启JavaScript支持
         mWebView.getSettings().setJavaScriptEnabled(true);

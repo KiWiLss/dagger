@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.kiwilss.dagger"
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -43,6 +43,11 @@ dependencies {
 
     compile 'com.android.support:recyclerview-v7:27.1.1'
     compile 'com.android.support:cardview-v7:27.1.1'
+
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.35'
+
+    implementation 'com.sdsmdg.harjot:materialshadows:1.2.5'
+
 }
 //应用apt插件
 //apply plugin: 'com.neenbedankt.android-apt'
