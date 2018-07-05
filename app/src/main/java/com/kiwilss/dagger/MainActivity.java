@@ -24,6 +24,7 @@ import com.kiwilss.dagger.basetext.TextViewActivity;
 import com.kiwilss.dagger.basetext.WebviewActivity;
 import com.kiwilss.dagger.basetext.flexbox.FlexboxActivity;
 import com.kiwilss.dagger.basetext.recycler.RecyclerOneActivity;
+import com.kiwilss.dagger.basetext.textview.SuperTextViewActivity;
 import com.kiwilss.dagger.basetext.viewpager.RvVpActivity;
 import com.kiwilss.dagger.test.DaggerMainComponent;
 import com.kiwilss.dagger.test.MainComponent;
@@ -159,5 +160,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void showLayout(View view) {
         startActivity(new Intent(this, ShaLayoutActivity.class));
+    }
+
+    public void supertextview(View view) {
+        startActivity(new Intent(this, SuperTextViewActivity.class));
     }
 }

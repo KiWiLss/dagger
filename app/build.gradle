@@ -48,6 +48,7 @@ dependencies {
 
     implementation 'com.sdsmdg.harjot:materialshadows:1.2.5'
 
+    implementation 'com.github.chenBingX:SuperTextView:v3.0.0'
 }
 //应用apt插件
 //apply plugin: 'com.neenbedankt.android-apt'

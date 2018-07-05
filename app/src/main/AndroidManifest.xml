@@ -48,7 +48,7 @@
 
         <activity android:name=".basetext.recycler.RecyclerOneActivity"/>
         <activity android:name=".basetext.ShaLayoutActivity"/>
-
+        <activity android:name=".basetext.textview.SuperTextViewActivity"/>
 
 
         <receiver android:name=".broadcast.BroadTestOne">
