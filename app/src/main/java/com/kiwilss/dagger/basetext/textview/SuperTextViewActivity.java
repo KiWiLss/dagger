@@ -26,7 +26,7 @@ public class SuperTextViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_super_textview);
 
 
-        mSv = findViewById(R.id.stv_2_1);
+        //mSv = findViewById(R.id.stv_2_1);
 
 
 

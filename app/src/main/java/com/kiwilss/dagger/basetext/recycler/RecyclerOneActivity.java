@@ -3,8 +3,10 @@ package com.kiwilss.dagger.basetext.recycler;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.kiwilss.dagger.R;
@@ -34,9 +36,7 @@ public class RecyclerOneActivity extends AppCompatActivity {
         this.iv = (ImageView) findViewById(R.id.iv);
         this.rvrecycleronelist = (RecyclerView) findViewById(R.id.rv_recycler_one_list);
 
-//        ObjectAnimator rotation = ObjectAnimator.ofFloat(iv, "rotation", 0, 180);
-//        rotation.setDuration(1000);
-//        rotation.start();
+
 
         mData = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
@@ -46,8 +46,29 @@ public class RecyclerOneActivity extends AppCompatActivity {
         rvrecycleronelist.setLayoutManager(gridLayoutManager);
 
         mAdapter = new RvOneAdapter(R.layout.item_rvone, mData);
+
+        //设置Item增加、移除动画
+        rvrecycleronelist.setItemAnimator(new DefaultItemAnimator());
+        //设置触摸事件
+
+
         rvrecycleronelist.setAdapter(mAdapter);
+        mAdapter.openLoadAnimation();
 
+    }
 
+    public void reduce(View view) {
+
+        mData.remove(4);
+        mAdapter.notifyItemRemoved(4);
+        //mAdapter.notifyDataSetChanged();
+
+    }
+
+    int mCount;
+    public void add(View view) {
+        mCount++;
+        mData.add("新增"+mCount);
+        mAdapter.notifyItemInserted(mData.size()-1);
     }
 }
