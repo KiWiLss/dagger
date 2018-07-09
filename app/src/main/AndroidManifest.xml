@@ -59,6 +59,13 @@
         <activity android:name=".basetext.recycler.RvItemTouchActivity"/>
         <activity android:name=".basetext.recycler.RvStickyActivity"/>
 
+        <activity android:name=".activity.LottieActivity"/>
+
+        <activity android:name=".arouter.ArouterOneActivity"/>
+        <activity android:name=".arouter.ArouterOneActivity2"/>
+        <activity android:name=".arouter.ArouterSencondActivity"/>
+
+
 
         <receiver android:name=".broadcast.BroadTestOne">
             <intent-filter>

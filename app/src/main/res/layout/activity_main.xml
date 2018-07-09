@@ -166,6 +166,34 @@
             android:text="RecyclerView使用"
             android:textAllCaps="false"
             android:onClick="rvUse"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="lottie使用"
+            android:textAllCaps="false"
+            android:onClick="lottlieListener"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="路由框架简单跳转"
+            android:textAllCaps="false"
+            android:onClick="arouterListener"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="路由框架携带参数跳转"
+            android:textAllCaps="false"
+            android:onClick="arouterParamsListener"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="路由框架Uri简单跳转"
+            android:textAllCaps="false"
+            android:onClick="arouterURiListener"/>
     </LinearLayout>
 
 </ScrollView>

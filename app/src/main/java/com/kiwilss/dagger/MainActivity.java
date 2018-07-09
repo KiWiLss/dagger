@@ -4,9 +4,13 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.kiwilss.dagger.activity.AlarmActivity;
 import com.kiwilss.dagger.activity.BindServiceActivity;
 import com.kiwilss.dagger.activity.BroadcastOneActivity;
@@ -14,6 +18,7 @@ import com.kiwilss.dagger.activity.ContentActivity;
 import com.kiwilss.dagger.activity.IntentActivity;
 import com.kiwilss.dagger.activity.LayoutAnimActivity;
 import com.kiwilss.dagger.activity.LocalReceiverActivity;
+import com.kiwilss.dagger.activity.LottieActivity;
 import com.kiwilss.dagger.activity.OneServiceActivity;
 import com.kiwilss.dagger.activity.ReceiverTwoActivity;
 import com.kiwilss.dagger.activity.XmlActivity;
@@ -27,10 +32,18 @@ import com.kiwilss.dagger.basetext.recycler.RecyclerOneActivity;
 import com.kiwilss.dagger.basetext.recycler.RvTestActivity;
 import com.kiwilss.dagger.basetext.textview.SuperTextViewActivity;
 import com.kiwilss.dagger.basetext.viewpager.RvVpActivity;
+import com.kiwilss.dagger.fragment.ActResultRequest;
+import com.kiwilss.dagger.model.ManualBean;
 import com.kiwilss.dagger.test.DaggerMainComponent;
 import com.kiwilss.dagger.test.MainComponent;
 import com.kiwilss.dagger.test.MainModule;
 
+
+
+// 在支持路由的页面上添加注解(必选)
+// 这里的路径需要注意的是至少需要有两级，/xx/xx
+// 路径标签个人建议写在一个类里面 这样方便统一管理和维护
+@Route(path = Constance.ACTIVITY_URL_MAIN)
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTvOne;
@@ -77,6 +90,8 @@ public class MainActivity extends AppCompatActivity {
 
         //mTvOne.setText("红布料加工后变成了"+mClothHandler.handle(mRedCloth)+ "\nclothHandler地址:" + mClothHandler);
 
+
+        ARouter.getInstance().inject(this);
     }
     private void initView() {
         mTvOne = (TextView) findViewById(R.id.tv_main_one);
@@ -169,5 +184,51 @@ public class MainActivity extends AppCompatActivity {
 
     public void rvUse(View view) {
         startActivity(new Intent(this, RvTestActivity.class));
+    }
+
+    public void lottlieListener(View view) {
+
+        Intent intent = new Intent(this, LottieActivity.class);
+
+        ActResultRequest request = new ActResultRequest(this);
+        request.startForResult(intent, new ActResultRequest.Callback() {
+            @Override
+            public void onActivityResult(int resultCode, Intent data) {
+                Toast.makeText(MainActivity.this, "" + resultCode, Toast.LENGTH_SHORT).show();
+            }
+        });
+        //startActivity(new Intent(this, LottieActivity.class));
+    }
+
+    /**路由测试  /**
+     * Activity 跳转 (普通跳转)
+     * @param view
+     */
+    public void arouterListener(View view) {
+        ARouter.getInstance().build( Constance.ACTIVITY_URL_ONE).
+                navigation();
+
+    }
+
+    /**携带参数跳转
+     * @param view
+     */
+    public void arouterParamsListener(View view) {
+        ARouter.getInstance().
+                build(Constance.ACTIVITY_URL_SECOND).
+                withString("key", "android").
+                withInt("age", 3).
+                withParcelable("test", new ManualBean("tzw", 26)).
+                navigation(MainActivity.this,123);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Log.e("MMM", "onActivityResult: " +requestCode+"||"+resultCode);
+    }
+
+    public void arouterURiListener(View view) {
+
     }
 }
