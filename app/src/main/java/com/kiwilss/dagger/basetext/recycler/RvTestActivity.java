@@ -46,4 +46,8 @@ public class RvTestActivity extends AppCompatActivity {
     public void gridLineListener(View view) {
         startActivity(new Intent(this, GridLineActivity.class));
     }
+
+    public void itemTouchListener(View view) {
+        startActivity(new Intent(this, RvItemTouchActivity.class));
+    }
 }
