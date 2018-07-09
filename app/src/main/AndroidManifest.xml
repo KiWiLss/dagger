@@ -55,6 +55,7 @@
         <activity android:name=".basetext.recycler.RvLinearActivity2"/>
         <activity android:name=".basetext.recycler.RvHeaderFooterActivity"/>
         <activity android:name=".basetext.recycler.GridActivity"/>
+        <activity android:name=".basetext.recycler.GridLineActivity"/>
 
 
         <receiver android:name=".broadcast.BroadTestOne">

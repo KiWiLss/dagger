@@ -42,4 +42,8 @@ public class RvTestActivity extends AppCompatActivity {
     public void gridHearderFooterListener(View view) {
         startActivity(new Intent(this, GridActivity.class));
     }
+
+    public void gridLineListener(View view) {
+        startActivity(new Intent(this, GridLineActivity.class));
+    }
 }

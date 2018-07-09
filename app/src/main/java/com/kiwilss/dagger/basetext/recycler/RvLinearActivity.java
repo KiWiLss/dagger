@@ -1,5 +1,6 @@
 package com.kiwilss.dagger.basetext.recycler;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +9,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.kiwilss.dagger.R;
 import com.kiwilss.dagger.adapter.RvLinearAdapter;
-import com.kiwilss.dagger.utils.rvutils.ListViewHeadDecoration;
+import com.kiwilss.dagger.utils.rvutils.ItemDivider;
 
 import java.util.ArrayList;
 
@@ -49,12 +50,16 @@ public class RvLinearActivity extends AppCompatActivity {
 //        rvlinearlist.addItemDecoration(new DividerItemDecoration
 //                (this, LinearLayoutManager.VERTICAL));
         //自定义分割线,顶部有线
-        rvlinearlist.addItemDecoration(new ListViewHeadDecoration
-                (this,R.drawable.listview_decoration));
+//        rvlinearlist.addItemDecoration(new ListViewHeadDecoration
+//                (this,R.drawable.listview_decoration));
         //顶部无线
 //        rvlinearlist.addItemDecoration(new ListViewDecoration
 //                (this,R.drawable.listview_decoration));
 
+        //添加分割线
+        ItemDivider itemDivider = new ItemDivider();
+        itemDivider.setDividerColor(Color.YELLOW).setDividerWith(5);
+        rvlinearlist.addItemDecoration(itemDivider);
 
 
 

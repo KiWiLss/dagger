@@ -9,21 +9,20 @@ import android.support.v7.widget.RecyclerView;
 
 import com.kiwilss.dagger.R;
 import com.kiwilss.dagger.adapter.GridAdapter;
-import com.kiwilss.dagger.adapter.RvHFAdapter;
 import com.kiwilss.dagger.utils.rvutils.ItemDivider;
 
 import java.util.ArrayList;
 
 /**
- * FileName: GridActivity
+ * FileName: GridLineActivity
  *
  * @author : Lss kiwilss
  * e-mail : kiwilss@163.com
- * time   : 2018/7/6
+ * time   : 2018/7/9
  * desc   : ${DESCRIPTION}
- * Description: ${DESCRIPTION}
+ * Description: ${DESCRIPTION}网格布局添加分割线
  */
-public class GridActivity extends AppCompatActivity {
+public class GridLineActivity extends AppCompatActivity {
     private android.support.v7.widget.RecyclerView rvlinearlist;
     private ArrayList<String> mData;
     private GridAdapter mGridAdapter;
@@ -35,7 +34,6 @@ public class GridActivity extends AppCompatActivity {
         this.rvlinearlist = (RecyclerView) findViewById(R.id.rv_linear_list);
 
         initData();
-
         initAdapter();
 
     }
@@ -43,27 +41,12 @@ public class GridActivity extends AppCompatActivity {
     private void initAdapter() {
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
         rvlinearlist.setLayoutManager(gridLayoutManager);
-
+//使用添加头和尾的适配器
         mGridAdapter = new GridAdapter(this, mData);
-        //rvlinearlist.setAdapter(mGridAdapter);
-        //使用添加头和尾的适配器
-        RvHFAdapter rvHFAdapter = new RvHFAdapter(this, mData);
-        rvlinearlist.setAdapter(rvHFAdapter);
-
-        //处理头和尾布局,使其占据一行
-        gridLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
-            @Override
-            public int getSpanSize(int position) {
-                //判断是否是头或者尾布局
-                if (position==0||position==mData.size()+1){
-                    return gridLayoutManager.getSpanCount();
-                }
-                return 1;
-            }
-        });
-
+        rvlinearlist.setAdapter(mGridAdapter);
         //添加分割线
         //rvlinearlist.addItemDecoration(new Divider2(this));
+        //添加分割线
 
         ItemDivider itemDivider = new ItemDivider();
         itemDivider.setDividerColor(Color.YELLOW).setDividerWith(5);
