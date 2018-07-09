@@ -24,5 +24,7 @@ public class RvOneAdapter extends BaseQuickAdapter<String,BaseViewHolder> {
     @Override
     protected void convert(BaseViewHolder helper, String item) {
         //helper.setText(R.id.tv_item_rv_one_tv,item);
+
+
     }
 }

@@ -50,6 +50,11 @@
         <activity android:name=".basetext.ShaLayoutActivity"/>
         <activity android:name=".basetext.textview.SuperTextViewActivity"/>
         <activity android:name=".basetext.recycler.RvTestActivity"/>
+        <activity android:name=".basetext.recycler.RvLinearActivity"/>
+
+        <activity android:name=".basetext.recycler.RvLinearActivity2"/>
+        <activity android:name=".basetext.recycler.RvHeaderFooterActivity"/>
+        <activity android:name=".basetext.recycler.GridActivity"/>
 
 
         <receiver android:name=".broadcast.BroadTestOne">

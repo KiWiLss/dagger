@@ -1,5 +1,6 @@
 package com.kiwilss.dagger.basetext.recycler;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -27,6 +28,18 @@ public class RvTestActivity extends AppCompatActivity {
     }
 
     public void linearListener(View view) {
+        startActivity(new Intent(this, RvLinearActivity.class));
+    }
 
+    public void linearHearderFooterListener(View view) {
+        startActivity(new Intent(this, RvLinearActivity2.class));
+    }
+
+    public void linearHearderFooterListener2(View view) {
+        startActivity(new Intent(this, RvHeaderFooterActivity.class));
+    }
+
+    public void gridHearderFooterListener(View view) {
+        startActivity(new Intent(this, GridActivity.class));
     }
 }

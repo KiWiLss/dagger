@@ -9,4 +9,22 @@
         android:layout_height="wrap_content"
         android:text="线性布局"
         android:onClick="linearListener"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="线性布局加头"
+        android:onClick="linearHearderFooterListener"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="线性布局加头加尾"
+        android:onClick="linearHearderFooterListener2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="网格布局加头加尾"
+        android:onClick="gridHearderFooterListener"/>
 </LinearLayout>
