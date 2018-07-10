@@ -50,4 +50,12 @@ public class RvTestActivity extends AppCompatActivity {
     public void itemTouchListener(View view) {
         startActivity(new Intent(this, RvItemTouchActivity.class));
     }
+
+    public void toutiaoOne(View view) {
+        startActivity(new Intent(this, TouTiaoOneActivty.class));
+    }
+
+    public void toutiaoTwo(View view) {
+        startActivity(new Intent(this, TouTiaoTwoActivity.class));
+    }
 }

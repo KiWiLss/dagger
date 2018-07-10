@@ -65,6 +65,10 @@
         <activity android:name=".arouter.ArouterOneActivity2"/>
         <activity android:name=".arouter.ArouterSencondActivity"/>
 
+        <activity android:name=".basetext.recycler.TouTiaoOneActivty"/>
+        <activity android:name=".activity.TouTiaoDetailActivity"/>
+        <activity android:name=".basetext.recycler.TouTiaoTwoActivity"/>
+
 
 
         <receiver android:name=".broadcast.BroadTestOne">

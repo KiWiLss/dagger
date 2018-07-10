@@ -2,6 +2,7 @@ package com.kiwilss.dagger;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -37,7 +38,6 @@ import com.kiwilss.dagger.model.ManualBean;
 import com.kiwilss.dagger.test.DaggerMainComponent;
 import com.kiwilss.dagger.test.MainComponent;
 import com.kiwilss.dagger.test.MainModule;
-
 
 
 // 在支持路由的页面上添加注解(必选)
@@ -182,6 +182,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, SuperTextViewActivity.class));
     }
 
+    /**对recyclerview使用练习
+     * @param view
+     */
     public void rvUse(View view) {
         startActivity(new Intent(this, RvTestActivity.class));
     }
@@ -229,6 +232,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void arouterURiListener(View view) {
-
+        Uri uri = Uri.parse(Constance.ACTIVITY_URL_ONE2);
+        ARouter.getInstance().build(uri)
+                .navigation();
     }
 }

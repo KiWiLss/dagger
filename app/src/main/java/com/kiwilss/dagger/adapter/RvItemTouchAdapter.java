@@ -3,6 +3,7 @@ package com.kiwilss.dagger.adapter;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +12,6 @@ import android.widget.TextView;
 import com.kiwilss.dagger.R;
 import com.kiwilss.dagger.utils.rvutils.MyItemTouchHandler;
 
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -29,6 +29,23 @@ public class RvItemTouchAdapter extends MyItemTouchHandler.ItemTouchAdapterImpl 
     private Context mContext;
     private List<String>mData;
 
+    /**是否开启滑动删除
+     * @return
+     */
+    @Override
+    protected boolean autoOpenSwipe() {
+        return super.autoOpenSwipe();
+    }
+
+    /**是否开启拖拽
+     * @return
+     */
+    @Override
+    protected boolean autoOpenDrag() {
+        return super.autoOpenDrag();
+    }
+
+
     public RvItemTouchAdapter(Context context, List<String> data) {
         mContext = context;
         mData = data;
@@ -37,8 +54,9 @@ public class RvItemTouchAdapter extends MyItemTouchHandler.ItemTouchAdapterImpl 
 
     @Override
     public void onItemMove(int fromPosition, int toPosition) {
-        //移动时交换位置
-        Collections.swap(mData,fromPosition,toPosition);
+        //移动监听
+       // Collections.swap(mData,fromPosition,toPosition);
+        Log.e("MMM", "onItemMove: "+fromPosition+"||"+toPosition);
     }
 
     @Override
@@ -60,6 +78,8 @@ public class RvItemTouchAdapter extends MyItemTouchHandler.ItemTouchAdapterImpl 
         if (holder instanceof ViewHolder) {
             ((ViewHolder) holder).tvTv.setText(mData.get(position));
         }
+
+
 
     }
 

@@ -4,7 +4,7 @@ import android.graphics.Canvas;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
@@ -16,7 +16,6 @@ import com.kiwilss.dagger.adapter.RvItemTouchAdapter;
 import com.kiwilss.dagger.utils.rvutils.MyItemTouchHandler;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  * FileName: RvItemTouchActivity
@@ -42,15 +41,23 @@ public class RvItemTouchActivity extends AppCompatActivity {
     }
 
     private void initAdapter() {
+
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 4);
         //线性布局拖拽
-        rvlinearlist.setLayoutManager(new LinearLayoutManager(this));
+        //rvlinearlist.setLayoutManager(new LinearLayoutManager(this));
+        rvlinearlist.setLayoutManager(gridLayoutManager);
 
         //自定义类实现拖拽,侧滑删除
         RvItemTouchAdapter adapter = new RvItemTouchAdapter(this, mData);
 
-        new ItemTouchHelper(new MyItemTouchHandler(adapter)).attachToRecyclerView(rvlinearlist);
+        MyItemTouchHandler myItemTouchHandler = new MyItemTouchHandler(adapter);
+
+        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(new MyItemTouchHandler(adapter));
+        itemTouchHelper.attachToRecyclerView(rvlinearlist);
 
         rvlinearlist.setAdapter(adapter);
+
+
 
        /* //库实现
         RvItemTouchAdapter2 adapter2 = new RvItemTouchAdapter2(R.layout.item_rv_linear2, mData);
@@ -78,7 +85,7 @@ public class RvItemTouchActivity extends AppCompatActivity {
         public void onItemDragMoving(RecyclerView.ViewHolder source, int from, RecyclerView.ViewHolder target, int to) {
 
             //移动位置互换
-            Collections.swap(mData,from,to);
+            //Collections.swap(mData,from,to);
 
         }
         @Override
@@ -110,7 +117,7 @@ public class RvItemTouchActivity extends AppCompatActivity {
 
     private void initData() {
         mData = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 20; i++) {
             mData.add("频道"+i);
         }
     }
