@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
@@ -72,7 +73,9 @@
         <activity android:name=".basetext.recycler.TouTiaoTwoActivity"/>
         <activity android:name=".basetext.recycler.WxPullActivity"/>
         <activity android:name=".basetext.recycler.WxPullActivity2"/>
+        <activity android:name=".dialog.DialogFragmentTestActivity"/>
 
+        <activity android:name=".dialog.WxIconActivity"/>
 
 
         <receiver android:name=".broadcast.BroadTestOne">

@@ -33,6 +33,8 @@ import com.kiwilss.dagger.basetext.recycler.RecyclerOneActivity;
 import com.kiwilss.dagger.basetext.recycler.RvTestActivity;
 import com.kiwilss.dagger.basetext.textview.SuperTextViewActivity;
 import com.kiwilss.dagger.basetext.viewpager.RvVpActivity;
+import com.kiwilss.dagger.dialog.DialogFragmentTestActivity;
+import com.kiwilss.dagger.dialog.WxIconActivity;
 import com.kiwilss.dagger.fragment.ActResultRequest;
 import com.kiwilss.dagger.model.ManualBean;
 import com.kiwilss.dagger.test.DaggerMainComponent;
@@ -235,5 +237,13 @@ public class MainActivity extends AppCompatActivity {
         Uri uri = Uri.parse(Constance.ACTIVITY_URL_ONE2);
         ARouter.getInstance().build(uri)
                 .navigation();
+    }
+
+    public void dialogListener(View view) {
+        startActivity(new Intent(this, DialogFragmentTestActivity.class));
+    }
+
+    public void wxiconCheckListener(View view) {
+        startActivity(new Intent(this, WxIconActivity.class));
     }
 }

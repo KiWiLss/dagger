@@ -194,6 +194,21 @@
             android:text="路由框架Uri简单跳转"
             android:textAllCaps="false"
             android:onClick="arouterURiListener"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dialog相关练习"
+            android:textAllCaps="false"
+            android:onClick="dialogListener"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="仿微信图片查看相关练习"
+            android:textAllCaps="false"
+            android:onClick="wxiconCheckListener"/>
+
     </LinearLayout>
 
 </ScrollView>
