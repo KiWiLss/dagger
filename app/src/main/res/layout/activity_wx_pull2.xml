@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kiwilss.dagger.wxpull.PullExtendLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_extend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!--隐藏下拉出来的头部-->
+    <com.kiwilss.dagger.wxpull.ExtendListHeader
+        android:id="@+id/extend_header"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"/>
+
+    <!--中间内容区域-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_wx_pull_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--隐藏上拉出来的底部-->
+    <com.kiwilss.dagger.wxpull.ExtendListFooter
+        android:id="@+id/extend_footer"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"/>
+
+</com.kiwilss.dagger.wxpull.PullExtendLayout>

@@ -1,6 +1,7 @@
 package com.kiwilss.dagger;
 
 import android.app.Application;
+import android.content.Context;
 import android.content.res.Configuration;
 import android.util.DisplayMetrics;
 
@@ -20,9 +21,16 @@ public class MyApplication extends Application {
     //  ARouter 调试开关
     private boolean isDebugARouter = true;
 
+    private static Context AppContext;
+
+    public static Context getContext() {
+        return AppContext;
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();
+        AppContext = getApplicationContext();
         resetdensity();
 //        if (isDebugARouter) {
 //            // 下面两行必须写在init之前，否则这些配置在init过程中将无效

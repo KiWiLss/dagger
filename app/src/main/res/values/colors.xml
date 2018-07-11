@@ -21,6 +21,8 @@
 
     <color name="search_edit_gray">#ffcccccc</color>
 
+    <color name="background">#f0f0f0</color>
+
 
     <!--transparent-->
     <color name="transparent">#00000000</color>

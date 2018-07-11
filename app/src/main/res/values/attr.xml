@@ -9,4 +9,9 @@
         <attr name="titleTextColor" format="color" />
     </declare-styleable>
 
+    <declare-styleable name="GestureLayout">
+        <attr name="leftDrawable" format="reference"/>
+        <attr name="rightDrawable" format="reference"/>
+        <attr name="bottomDrawable" format="reference"/>
+    </declare-styleable>
 </resources>

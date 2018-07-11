@@ -58,4 +58,12 @@ public class RvTestActivity extends AppCompatActivity {
     public void toutiaoTwo(View view) {
         startActivity(new Intent(this, TouTiaoTwoActivity.class));
     }
+
+    public void wxPullListener(View view) {
+        startActivity(new Intent(this, WxPullActivity.class));
+    }
+
+    public void wxPullListener2(View view) {
+        startActivity(new Intent(this, WxPullActivity2.class));
+    }
 }

@@ -54,6 +54,18 @@
             android:layout_height="wrap_content"
             android:text="仿头条频道二"
             android:onClick="toutiaoTwo"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仿微信首页下拉"
+            android:onClick="wxPullListener"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仿微信首页下拉2"
+            android:onClick="wxPullListener2"/>
     </LinearLayout>
 
 </ScrollView>

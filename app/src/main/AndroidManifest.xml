@@ -8,6 +8,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -68,6 +70,8 @@
         <activity android:name=".basetext.recycler.TouTiaoOneActivty"/>
         <activity android:name=".activity.TouTiaoDetailActivity"/>
         <activity android:name=".basetext.recycler.TouTiaoTwoActivity"/>
+        <activity android:name=".basetext.recycler.WxPullActivity"/>
+        <activity android:name=".basetext.recycler.WxPullActivity2"/>
 
 
 

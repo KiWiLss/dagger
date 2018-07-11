@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--主要控件布局  注意   android:layout_height="0dp"  -->
+    <RelativeLayout
+        android:id="@+id/rel_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#f1f1f1">
+
+        <!--这里就是菜单布局,可以换成ListView等 ,但是要注意
+        android:layout_height="match_parent"
+         android:visibility="gone" -->
+
+        <RelativeLayout
+            android:id="@+id/rel_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/bg_red_circle"/>
+        </RelativeLayout>
+
+        <!--这里是三个小圆点布局-->
+        <RelativeLayout
+            android:id="@+id/rel_dot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <View
+                android:id="@+id/dot_1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/bg_red_circle"/>
+            <View
+                android:id="@+id/dot_2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/bg_red_circle"/>
+            <View
+                android:id="@+id/dot_3"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/bg_red_circle"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <!--随便可替换自己想实现的内容-->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="CSDN版权与免责声明"
+                android:textColor="#444"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/longlongtext"
+                android:textColor="#666"
+                android:textSize="14sp"
+                android:lineSpacingExtra="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -10,7 +10,8 @@
         android:layout_height="45dp"
         android:text="text"
         android:textSize="14dp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:background="@color/green"/>
 
 
 </android.support.constraint.ConstraintLayout>
