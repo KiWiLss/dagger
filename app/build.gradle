@@ -69,6 +69,8 @@ dependencies {
 
     //微信图片查看
     implementation 'com.jchou.android.imagereview:imagereview:1.0.1'
+
+    implementation 'jp.wasabeef:recyclerview-animators:2.3.0'
 }
 //应用apt插件
 //apply plugin: 'com.neenbedankt.android-apt'

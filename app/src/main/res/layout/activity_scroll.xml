@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/sv_scroll_outer"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_scroll_outer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_scroll_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="滚动到第四个布局"
+            android:onClick="scrollFourListener"/>
+              <TextView
+            android:id="@+id/tv_scroll_one"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="第一个布局内容"
+            />
+
+        <TextView
+            android:id="@+id/tv_scroll_two"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="第二个布局内容"
+            />
+        <TextView
+            android:id="@+id/tv_scroll_three"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="第三个布局内容"
+            />
+
+        <com.kiwilss.dagger.widget.MyTextView
+            android:id="@+id/mtv_scroll_four"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="第四个布局"/>
+
+        <com.kiwilss.dagger.widget.MyTextView
+            android:id="@+id/mtv_scroll_five"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="第5个布局"/>
+    </LinearLayout>
+
+</ScrollView>

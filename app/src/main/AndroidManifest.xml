@@ -76,6 +76,10 @@
         <activity android:name=".dialog.DialogFragmentTestActivity"/>
 
         <activity android:name=".dialog.WxIconActivity"/>
+        <activity android:name=".basetext.recycler.anim.RvAnimOneActivity"/>
+        <activity android:name=".basetext.scroll.ScrollActivity"/>
+        <activity android:name=".basetext.scroll.HorizontalActivity"/>
+        <activity android:name=".basetext.scroll.RecyclerHorizontalActivity"/>
 
 
         <receiver android:name=".broadcast.BroadTestOne">

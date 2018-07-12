@@ -208,7 +208,27 @@
             android:text="仿微信图片查看相关练习"
             android:textAllCaps="false"
             android:onClick="wxiconCheckListener"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="rcyclerview动画相关"
+            android:textAllCaps="false"
+            android:onClick="rvanimListener"/>
 
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="scrollView相关"
+            android:textAllCaps="false"
+            android:onClick="scrollviewListener"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="horizontalscrollview点击子项居中"
+            android:textAllCaps="false"
+            android:onClick="horizontalscrollviewListener"/>
     </LinearLayout>
 
 </ScrollView>

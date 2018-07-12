@@ -31,6 +31,9 @@ import com.kiwilss.dagger.basetext.WebviewActivity;
 import com.kiwilss.dagger.basetext.flexbox.FlexboxActivity;
 import com.kiwilss.dagger.basetext.recycler.RecyclerOneActivity;
 import com.kiwilss.dagger.basetext.recycler.RvTestActivity;
+import com.kiwilss.dagger.basetext.recycler.anim.RvAnimOneActivity;
+import com.kiwilss.dagger.basetext.scroll.HorizontalActivity;
+import com.kiwilss.dagger.basetext.scroll.ScrollActivity;
 import com.kiwilss.dagger.basetext.textview.SuperTextViewActivity;
 import com.kiwilss.dagger.basetext.viewpager.RvVpActivity;
 import com.kiwilss.dagger.dialog.DialogFragmentTestActivity;
@@ -245,5 +248,17 @@ public class MainActivity extends AppCompatActivity {
 
     public void wxiconCheckListener(View view) {
         startActivity(new Intent(this, WxIconActivity.class));
+    }
+
+    public void rvanimListener(View view) {
+        startActivity(new Intent(this, RvAnimOneActivity.class));
+    }
+
+    public void scrollviewListener(View view) {
+        startActivity(new Intent(this, ScrollActivity.class));
+    }
+
+    public void horizontalscrollviewListener(View view) {
+        startActivity(new Intent(this, HorizontalActivity.class));
     }
 }
