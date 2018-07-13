@@ -11,6 +11,9 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
+    <uses-permission android:name = "android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -81,6 +84,8 @@
         <activity android:name=".basetext.scroll.HorizontalActivity"/>
         <activity android:name=".basetext.scroll.RecyclerHorizontalActivity"/>
 
+        <activity android:name=".activity.WallPaperActivity"/>
+        <activity android:name=".activity.GlideTestActivity"/>
 
         <receiver android:name=".broadcast.BroadTestOne">
             <intent-filter>

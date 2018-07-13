@@ -22,6 +22,7 @@ import com.kiwilss.dagger.activity.LocalReceiverActivity;
 import com.kiwilss.dagger.activity.LottieActivity;
 import com.kiwilss.dagger.activity.OneServiceActivity;
 import com.kiwilss.dagger.activity.ReceiverTwoActivity;
+import com.kiwilss.dagger.activity.WallPaperActivity;
 import com.kiwilss.dagger.activity.XmlActivity;
 import com.kiwilss.dagger.basetext.ConstrainlayoutActivity;
 import com.kiwilss.dagger.basetext.SearchActivity;
@@ -260,5 +261,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void horizontalscrollviewListener(View view) {
         startActivity(new Intent(this, HorizontalActivity.class));
+    }
+
+    public void wallpaperListener(View view) {
+        startActivity(new Intent(this, WallPaperActivity.class));
     }
 }

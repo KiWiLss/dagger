@@ -30,7 +30,7 @@ public class WxIconAdapter extends BaseQuickAdapter<String,BaseViewHolder> {
 
 
         Glide.with(mContext).load(mData.get(helper.getAdapterPosition()))
-                .placeholder(R.mipmap.ic_launcher).dontAnimate()
+                //.placeholder(R.mipmap.ic_launcher).dontAnimate()
                 .into(iv);
     }
 }

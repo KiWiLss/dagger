@@ -229,6 +229,13 @@
             android:text="horizontalscrollview点击子项居中"
             android:textAllCaps="false"
             android:onClick="horizontalscrollviewListener"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="壁纸"
+            android:textAllCaps="false"
+            android:onClick="wallpaperListener"/>
     </LinearLayout>
 
 </ScrollView>

@@ -72,7 +72,22 @@
     </LinearLayout>
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动态设置阴影"/>
 
+
+    <TextView
+        android:id="@+id/tv_shalow_object"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="测试对象"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:background="@color/green"/>
 
 
 
