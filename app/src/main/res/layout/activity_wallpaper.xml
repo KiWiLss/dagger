@@ -26,6 +26,13 @@
         android:id="@+id/btn_wallpaper_choice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="选择设置壁纸"
+        android:text="glide测试"
+        />
+
+    <Button
+        android:id="@+id/btn_wallpaper_glide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="glide库测试"
         />
 </LinearLayout>

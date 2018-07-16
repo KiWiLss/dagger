@@ -74,17 +74,18 @@ dependencies {
 
     implementation 'com.github.zhengcx:ShadowHelper:v1.0'
 
-    //implementation 'com.github.bumptech.glide:glide:4.4.0'
-//    annotationProcessor 'com.github.bumptech.glide:compiler:4.4.0'
-//
-
     implementation 'com.github.bumptech.glide:glide:4.7.1'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
 
     implementation 'jp.wasabeef:glide-transformations:3.3.0'
-
-    // If you want to use the GPU Filters
+//
+//    // If you want to use the GPU Filters
     implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+
+
+    //implementation 'com.sunfusheng:GlideImageView:2.0.0'
+
+    implementation 'me.jessyan:progressmanager:1.5.0'
 }
 //应用apt插件
 //apply plugin: 'com.neenbedankt.android-apt'

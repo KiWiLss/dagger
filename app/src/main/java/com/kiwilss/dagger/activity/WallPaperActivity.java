@@ -25,11 +25,13 @@ public class WallPaperActivity extends AppCompatActivity {
     private android.widget.Button btnwallpaperget;
     private android.widget.Button btnwallpapersetR;
     private android.widget.Button btnwallpaperchoice;
+    private Button btnwallpaperglide;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wallpaper);
+        this.btnwallpaperglide = (Button) findViewById(R.id.btn_wallpaper_glide);
         this.btnwallpaperchoice = (Button) findViewById(R.id.btn_wallpaper_choice);
         this.btnwallpapersetR = (Button) findViewById(R.id.btn_wallpaper_setR);
         this.btnwallpaperget = (Button) findViewById(R.id.btn_wallpaper_get);
@@ -99,19 +101,22 @@ public class WallPaperActivity extends AppCompatActivity {
 //                    .load(url).apply(requestOptions).into(ivwallpapericon);
 
 
-            //GlideUtils.getInstance().loadCircleImg(WallPaperActivity.this,url,ivwallpapericon);
-            GlideUtils.getInstance().loadSquareImg(WallPaperActivity.this,url,ivwallpapericon);
+            GlideUtils.getInstance().loadCircleImg(WallPaperActivity.this,url,ivwallpapericon);
+            //GlideUtils.getInstance().loadSquareImg(WallPaperActivity.this,url,ivwallpapericon);
         });
 
 
         btnwallpaperchoice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 startActivity(new Intent(WallPaperActivity.this,
                         GlideTestActivity.class));
-
             }
+        });
+
+        btnwallpaperglide.setOnClickListener(view -> {
+            startActivity(new Intent(WallPaperActivity.this,
+                    GlideKuActivity.class));
         });
 
     }

@@ -86,6 +86,8 @@
 
         <activity android:name=".activity.WallPaperActivity"/>
         <activity android:name=".activity.GlideTestActivity"/>
+        <activity android:name=".activity.GlideKuActivity"/>
+
 
         <receiver android:name=".broadcast.BroadTestOne">
             <intent-filter>

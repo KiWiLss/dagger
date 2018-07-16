@@ -4,4 +4,9 @@
         依附于ScrollView、ListView等带有滑动的控件，判断是否滚动到顶部，然后在控件的滚动监听事件中做处理，但这种方法由于种种限制被我否决了（小伙伴们可以看看这种方法到底可不可行...）；第二种，就是用dispatchTouchEvent方法，监听手势，个人觉得这个很靠谱，哈哈哈。写之前我考虑了两种方法，第一种，依附于ScrollView、ListView等带有滑动的控件，判断是否滚动到顶部，然后在控件的滚动监听事件中做处理，但这种方法由于种种限制被我否决了（小伙伴们可以看看这种方法到底可不可行...）；第二种，就是用dispatchTouchEvent方法，监听手势，个人觉得这个很靠谱，哈哈哈。
     写之前我考虑了两种方法，第一种，
         写之前我考虑了两种方法，第一种，依附于ScrollView、ListView等带有滑动的控件，判断是否滚动到顶部，然后在控件的滚动监听事件中做处理，但这种方法由于种种限制被我否决了（小伙伴们可以看看这种方法到底可不可行...）；第二种，就是用dispatchTouchEvent方法，监听手势，个人觉得这个很靠谱，哈哈哈。依附于ScrollView、ListView等带有滑动的控件，判断是否滚动到顶部，然后在控件的滚动监听事件中做处理，但这种方法由于种种限制被我否决了（小伙伴们可以看看这种方法到底可不可行...）；第二种，就是用dispatchTouchEvent方法，监听手势，个人觉得这个很靠谱，哈哈哈。</string>
+
+    <string name="transitional_image">the image of transition</string>
+    <string name="image_index">%1$d/%2$d</string>
+
+
 </resources>

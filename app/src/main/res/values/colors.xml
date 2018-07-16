@@ -108,4 +108,59 @@
     <color name="opacity_5_a58fed">#80A58FED</color>
     <color name="opacity_8_a58fed">#ccA58FED</color>
     <color name="opacity_9_a58fed">#e6A58FED</color>
+
+
+    <!-- common -->
+    <color name="c0">#ff000000</color>
+    <color name="c1">#D9000000</color>
+    <color name="c2">#8C000000</color>
+    <color name="c3">#66000000</color>
+    <color name="c4">#1A000000</color>
+    <color name="c5">#C34A42</color>
+    <color name="c6">#FF9800</color>
+    <color name="c7">#009734</color>
+    <color name="c8">#46AE36</color>
+    <color name="c9">#47B000</color>
+    <color name="c10">#007AFF</color>
+    <color name="c11">#1194F6</color>
+    <color name="c12">#9D1BB2</color>
+
+    <!--<color name="transparent">#00000000</color>-->
+    <color name="transparent05">#0B000000</color>
+    <color name="transparent10">#1A000000</color>
+    <color name="transparent20">#33000000</color>
+    <color name="transparent30">#4D000000</color>
+    <color name="transparent40">#66000000</color>
+    <color name="transparent50">#80000000</color>
+    <color name="transparent60">#9A000000</color>
+    <color name="transparent70">#B3000000</color>
+    <color name="transparent80">#CC000000</color>
+    <color name="transparent90">#E5000000</color>
+    <color name="transparent100">#FF000000</color>
+
+    <color name="transparent_white">#00ffffff</color>
+    <color name="transparent10_white">#1Affffff</color>
+    <color name="transparent20_white">#33ffffff</color>
+    <color name="transparent30_white">#4Dffffff</color>
+    <color name="transparent40_white">#66ffffff</color>
+    <color name="transparent50_white">#80ffffff</color>
+    <color name="transparent60_white">#9Affffff</color>
+    <color name="transparent70_white">#B3ffffff</color>
+    <color name="transparent80_white">#CCffffff</color>
+    <color name="transparent90_white">#E5ffffff</color>
+    <color name="transparent100_white">#FFffffff</color>
+
+    <color name="placeholder">#33000000</color>
+    <color name="placeholder_yellow">#33fbc02d</color>
+    <color name="placeholder_orange">#33f57c00</color>
+
+    <!--<color name="white">#FFFFFF</color>  &lt;!&ndash; 白色 &ndash;&gt;-->
+    <!--<color name="yellow">#fbc02d</color> &lt;!&ndash; 黄色 &ndash;&gt;-->
+    <color name="gold">#FFD700</color>   <!-- 金色 -->
+    <color name="orange">#f57c00</color> <!-- 橙色 -->
+    <!--<color name="red">#d01716</color>    &lt;!&ndash; 红色 &ndash;&gt;-->
+    <!--<color name="gray">#808080</color>   &lt;!&ndash; 灰色 &ndash;&gt;-->
+    <!--<color name="green">#0a7e07</color>  &lt;!&ndash; 绿色 &ndash;&gt;-->
+    <!--<color name="blue">#455ede</color>   &lt;!&ndash; 蓝色 &ndash;&gt;-->
+    <!--<color name="black">#000000</color>  &lt;!&ndash; 黑色 &ndash;&gt;-->
 </resources>
